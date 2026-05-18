@@ -1,0 +1,36 @@
+/* Custom thin scrollbar for Ant Design Select dropdown */
+.ant-select-dropdown,
+.custom-select-dropdown {
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.ant-select-dropdown::-webkit-scrollbar,
+.custom-select-dropdown::-webkit-scrollbar {
+  width: 6px;
+  background: transparent;
+}
+
+.ant-select-dropdown::-webkit-scrollbar-thumb,
+.custom-select-dropdown::-webkit-scrollbar-thumb {
+  background: #d1d5db;
+  border-radius: 9999px;
+}
+
+.ant-select-dropdown::-webkit-scrollbar-thumb:hover,
+.custom-select-dropdown::-webkit-scrollbar-thumb:hover {
+  background: #9ca3af;
+}
+
+.ant-select-dropdown::-webkit-scrollbar-track,
+.custom-select-dropdown::-webkit-scrollbar-track {
+  background: transparent;
+  border-radius: 9999px;
+}
+
+/* For Firefox */
+.ant-select-dropdown,
+.custom-select-dropdown {
+  scrollbar-width: thin;
+  scrollbar-color: #d1d5db transparent;
+}
