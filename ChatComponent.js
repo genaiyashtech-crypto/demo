@@ -183,10 +183,7 @@ const safeFormatTimestamp = (timestamp, formatTimestamp) => {
 const safeCopyToClipboard = async (text, copyToClipboard) => {
   try {
 nt.createElement('textarea')
-      textArea.value = text
-      document.body.appendChild(textArea)
-      textArea.select()
-      document.execCommand('copy')
+     
       document.body.removeChild(textArea)
       message.success('Copied to clipboard')
     }
