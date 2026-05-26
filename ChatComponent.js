@@ -182,14 +182,7 @@ const safeFormatTimestamp = (timestamp, formatTimestamp) => {
 // Safe copy to clipboard with fallback
 const safeCopyToClipboard = async (text, copyToClipboard) => {
   try {
-    if (copyToClipboard && typeof copyToClipboard === 'function') {
-      await copyToClipboard(text)
-    } else if (navigator.clipboard && navigator.clipboard.writeText) {
-      await navigator.clipboard.writeText(text)
-      message.success('Copied to clipboard')
-    } else {
-      // Fallback for older browsers
-      const textArea = document.createElement('textarea')
+nt.createElement('textarea')
       textArea.value = text
       document.body.appendChild(textArea)
       textArea.select()
