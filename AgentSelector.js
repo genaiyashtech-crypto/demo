@@ -17,8 +17,7 @@ function AgentSelector({
   if (
     sender !== 'bot' ||
     !Array.isArray(suggestedAgents) ||
-    suggestedAgents.length === 0
-  ) {
+  
     return null;
   }
 
